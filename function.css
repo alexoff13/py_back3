@@ -1,0 +1,13 @@
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 3px;
+  min-width: 100px
+}
+
+div {
+  display: -webkit-box;
+}

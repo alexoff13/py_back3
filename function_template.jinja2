@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Таблица и график функции</title>
+    <link rel="stylesheet" href="function.css">
+</head>
+<body>
+<p>
+    <b>f(x) = x<sup>3</sup> - 6x<sup>2</sup> + x + 5</b>
+</p>
+<div>
+    <table>
+        <tr>
+            <th>x</th>
+            <th>f(x)</th>
+        </tr>
+        <tbody>
+        {% for i in range(len(x)) %}
+            <tr>
+                <td>{{ round(x[i], 3) }}</td>
+                <td>{{ round(y[i], 4) }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <img src="{{ plot }}" alt="plot">
+</div>
+</body>
+</html>

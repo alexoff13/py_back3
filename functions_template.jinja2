@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Таблица и график функции</title>
+    <link rel="stylesheet" href="functions.css">
+</head>
+<body>
+<div class="setter">
+    <form>
+        <p>Функция:<label>
+            <select name="func">
+                {% for f in functions %}
+                    <option {% if f == function %}selected{% endif %} value="{{ f.name }}">{{ f.name }}</option>
+                {% endfor %}
+            </select>
+        </label></p>
+        <p>Начало интервала: <label><input type="text" name="a" size="1" value="{{ function.a }}"></label></p>
+        <p>Конец интервала: <label><input type="text" name="b" size="1" value="{{ function.b }}"></label></p>
+        <p>Количество значений: <label><input type="text" name="n" size="1" value="{{ function.n }}"></label></p>
+        <p><input type="submit" value="Построить"></p>
+        <p><b>{{ function1 }}</b></p>
+        <p><b>{{ function2 }}</b></p>
+
+        <p><b>{{ function3 }}</b></p>
+
+    </form>
+</div>
+<div class="representaion">
+    <div>
+        <table>
+            <tr>
+                <th>x</th>
+                <th>{{ function1.name }}</th>
+                <th>{{ function2.name }}</th>
+                <th>{{ function3.name }}</th>
+
+
+            </tr>
+            <tbody>
+            {% for n in range(function.n) %}
+                <tr>
+                    <td>{{ round(function1.data[n].x, 3) }}</td>
+                    <td>{{ round(function1.data[n].y, 4) }}</td>
+                    <td>{{ round(function2.data[n].y, 4) }}</td>
+                    <td>{{ round(function3.data[n].y, 4) }}</td>
+
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <img src="{{ plot3 }}" alt="plot">
+    </div>
+</div>
+</body>
+</html>

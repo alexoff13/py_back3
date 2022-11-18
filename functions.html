@@ -1,0 +1,297 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Таблица и график функции</title>
+    <link rel="stylesheet" href="functions.css">
+</head>
+<body>
+<div class="setter">
+    <form>
+        <p>Функция:<label>
+            <select name="func">
+                
+                    <option  value="f(x)">f(x)</option>
+                
+                    <option selected value="y(x)">y(x)</option>
+                
+                    <option  value="z(x)">z(x)</option>
+                
+            </select>
+        </label></p>
+        <p>Начало интервала: <label><input type="text" name="a" size="1" value="-2"></label></p>
+        <p>Конец интервала: <label><input type="text" name="b" size="1" value="6"></label></p>
+        <p>Количество значений: <label><input type="text" name="n" size="1" value="30"></label></p>
+        <p><input type="submit" value="Построить"></p>
+        <p><b>f(x) = x<sup>3</sup> - 6x<sup>2</sup> + x + 5</b></p>
+        <p><b>z(x) = 1 / (x<sup>2</sup> + 1)</b></p>
+
+        <p><b>y(x) = x<sup>2</sup> - 5x + 1</b></p>
+
+    </form>
+</div>
+<div class="representaion">
+    <div>
+        <table>
+            <tr>
+                <th>x</th>
+                <th>f(x)</th>
+                <th>z(x)</th>
+                <th>y(x)</th>
+
+
+            </tr>
+            <tbody>
+            
+                <tr>
+                    <td>-2.0</td>
+                    <td>-29.0</td>
+                    <td>0.2</td>
+                    <td>15.0</td>
+
+                </tr>
+            
+                <tr>
+                    <td>-1.724</td>
+                    <td>-19.6853</td>
+                    <td>0.2517</td>
+                    <td>12.5933</td>
+
+                </tr>
+            
+                <tr>
+                    <td>-1.448</td>
+                    <td>-12.0711</td>
+                    <td>0.3228</td>
+                    <td>10.3389</td>
+
+                </tr>
+            
+                <tr>
+                    <td>-1.172</td>
+                    <td>-6.0313</td>
+                    <td>0.4211</td>
+                    <td>8.2366</td>
+
+                </tr>
+            
+                <tr>
+                    <td>-0.897</td>
+                    <td>-1.44</td>
+                    <td>0.5544</td>
+                    <td>6.2866</td>
+
+                </tr>
+            
+                <tr>
+                    <td>-0.621</td>
+                    <td>1.8287</td>
+                    <td>0.7219</td>
+                    <td>4.4887</td>
+
+                </tr>
+            
+                <tr>
+                    <td>-0.345</td>
+                    <td>3.9007</td>
+                    <td>0.8937</td>
+                    <td>2.843</td>
+
+                </tr>
+            
+                <tr>
+                    <td>-0.069</td>
+                    <td>4.9022</td>
+                    <td>0.9953</td>
+                    <td>1.3496</td>
+
+                </tr>
+            
+                <tr>
+                    <td>0.207</td>
+                    <td>4.9589</td>
+                    <td>0.959</td>
+                    <td>0.0083</td>
+
+                </tr>
+            
+                <tr>
+                    <td>0.483</td>
+                    <td>4.1969</td>
+                    <td>0.811</td>
+                    <td>-1.1807</td>
+
+                </tr>
+            
+                <tr>
+                    <td>0.759</td>
+                    <td>2.7422</td>
+                    <td>0.6347</td>
+                    <td>-2.2176</td>
+
+                </tr>
+            
+                <tr>
+                    <td>1.034</td>
+                    <td>0.7206</td>
+                    <td>0.4831</td>
+                    <td>-3.1023</td>
+
+                </tr>
+            
+                <tr>
+                    <td>1.31</td>
+                    <td>-1.7418</td>
+                    <td>0.3681</td>
+                    <td>-3.8347</td>
+
+                </tr>
+            
+                <tr>
+                    <td>1.586</td>
+                    <td>-4.5191</td>
+                    <td>0.2844</td>
+                    <td>-4.415</td>
+
+                </tr>
+            
+                <tr>
+                    <td>1.862</td>
+                    <td>-7.4854</td>
+                    <td>0.2238</td>
+                    <td>-4.843</td>
+
+                </tr>
+            
+                <tr>
+                    <td>2.138</td>
+                    <td>-10.5146</td>
+                    <td>0.1795</td>
+                    <td>-5.1189</td>
+
+                </tr>
+            
+                <tr>
+                    <td>2.414</td>
+                    <td>-13.4809</td>
+                    <td>0.1465</td>
+                    <td>-5.2426</td>
+
+                </tr>
+            
+                <tr>
+                    <td>2.69</td>
+                    <td>-16.2582</td>
+                    <td>0.1214</td>
+                    <td>-5.214</td>
+
+                </tr>
+            
+                <tr>
+                    <td>2.966</td>
+                    <td>-18.7206</td>
+                    <td>0.1021</td>
+                    <td>-5.0333</td>
+
+                </tr>
+            
+                <tr>
+                    <td>3.241</td>
+                    <td>-20.7422</td>
+                    <td>0.0869</td>
+                    <td>-4.7004</td>
+
+                </tr>
+            
+                <tr>
+                    <td>3.517</td>
+                    <td>-22.1969</td>
+                    <td>0.0748</td>
+                    <td>-4.2152</td>
+
+                </tr>
+            
+                <tr>
+                    <td>3.793</td>
+                    <td>-22.9589</td>
+                    <td>0.065</td>
+                    <td>-3.5779</td>
+
+                </tr>
+            
+                <tr>
+                    <td>4.069</td>
+                    <td>-22.9022</td>
+                    <td>0.057</td>
+                    <td>-2.7883</td>
+
+                </tr>
+            
+                <tr>
+                    <td>4.345</td>
+                    <td>-21.9007</td>
+                    <td>0.0503</td>
+                    <td>-1.8466</td>
+
+                </tr>
+            
+                <tr>
+                    <td>4.621</td>
+                    <td>-19.8287</td>
+                    <td>0.0447</td>
+                    <td>-0.7527</td>
+
+                </tr>
+            
+                <tr>
+                    <td>4.897</td>
+                    <td>-16.56</td>
+                    <td>0.04</td>
+                    <td>0.4935</td>
+
+                </tr>
+            
+                <tr>
+                    <td>5.172</td>
+                    <td>-11.9687</td>
+                    <td>0.036</td>
+                    <td>1.8918</td>
+
+                </tr>
+            
+                <tr>
+                    <td>5.448</td>
+                    <td>-5.9289</td>
+                    <td>0.0326</td>
+                    <td>3.4423</td>
+
+                </tr>
+            
+                <tr>
+                    <td>5.724</td>
+                    <td>1.6853</td>
+                    <td>0.0296</td>
+                    <td>5.1451</td>
+
+                </tr>
+            
+                <tr>
+                    <td>6.0</td>
+                    <td>11.0</td>
+                    <td>0.027</td>
+                    <td>7.0</td>
+
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <img src="functions3.jpg" alt="plot">
+    </div>
+</div>
+</body>
+</html>
